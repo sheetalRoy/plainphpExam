@@ -1,0 +1,255 @@
+/*==================================
+* Author        : "Sheetal"
+==================================== */
+
+/*==================================
+
+
+/*=========== TABLE OF CONTENTS ===========
+1. Left navbar
+2. General css
+3. Form Input	
+4. Footer
+
+
+===========*/
+body {
+  margin: 0;
+}
+
+/*-------------------------------------
+		1.Left navbar
+--------------------------------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #2f2c2c;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/*-------------------------------------
+		2.General css
+--------------------------------------*/
+.header-bar{
+	margin-left:25%;
+	padding:1px 16px;
+	height:40px;
+	width:75%;
+	background-color:#26277a;
+}
+.header-text{
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+}
+.mainArea{
+margin-left:25%;
+padding:1px 16px;
+min-height:550px;
+background-color:#e0e0ea;
+}
+.moduleContent{
+	width:700px;
+	height:170px;
+	padding:5px;
+	margin:5px;
+}
+.dashboard{
+width:300px;
+height:150px;
+float:left;
+background-color:#145ce2;
+padding:5px;
+margin:5px;
+border: 2px solid #fff;
+border-bottom:10px solid #26277a;
+}
+.dashboard-text{
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+}
+.tbl-container{    
+    border-radius: 8px;
+}
+.tbl-container tr{
+    background: #f0f0f0;
+}
+.tbl-container tr:nth-child(odd){ 
+    background: #f0f0f0;
+}
+/*  Define the background color for all the EVEN background rows  */
+.tbl-container tr:nth-child(even){
+    background: #d9d9d9;
+}
+.tbl-container td,th{
+    border-collapse: collapse;
+    border:1px dotted #ccc;
+    font-size: 13.5px;
+    padding: 3px;
+    font-size: 13px;
+}
+.tbl-container th{
+    text-align: left;
+}
+.tbl-container tr:first-child th{
+    background: #6b768a;
+    color: #fff;
+}
+.imgContainer{
+	float:left;
+	width:260px;
+	height:260px;
+	padding:5px;
+	margin:5px;
+	border:1px solid #ccc;
+}
+.errorMsg{
+	margin:4px;
+	padding:4px;
+	background-color:#e8e875;
+	height: 40px;
+	border-radius: 8px;
+	color:red;
+}
+.successMsg{
+	margin:4px;
+	padding:4px;
+	background-color:#0a961c;
+	height: 40px;
+	border-radius: 8px;
+	color:#fff;
+}
+#printQuestionPaper{
+	margin:20px;
+	padding:10px;
+}
+/*-------------------------------------
+		3.Form Input
+--------------------------------------*/
+.textbox{
+    width: 172px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    height: 25px;   
+    border-radius: 6px;
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+}
+.textbox-sm{
+    width: 100px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    height: 25px;   
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+}
+.textbox-lg{
+    width: 300px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    height: 25px;   
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+}
+.comment-box{
+    min-height: 120px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;       
+    border-radius: 6px;
+	width: 400px;
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0;
+}
+.select-input{
+    width: 172px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    height: 25px;   
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0; 
+}
+
+.select-yes-no{
+    width: 80px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    height: 25px;   
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #fff inset;
+    -webkit-background-clip: padding-box;
+    outline: 0; 
+}
+
+
+.btn{
+    background-color: #26277a;
+    min-width: 100px;
+    padding: 1px 5px;
+    border: 1px solid #bbb;
+    min-height: 25px;   
+    border-radius: 6px;
+    color: white;
+
+    box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #26277a inset;
+    -moz-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #26277a inset;
+    -webkit-box-shadow: 1px 1px 0 0 #bbb, 5px 5px 40px 2px #26277a inset;
+    -webkit-background-clip: padding-box;
+    outline: 0; 
+}
+/*-------------------------------------
+		3.Footer
+--------------------------------------*/
+.footer{
+	margin-left:25%;
+	padding:1px 0px;
+	height:30px;
+	width:75%;
+	background-color:#26277a;
+}
+/*========================Thank you=================
